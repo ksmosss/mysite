@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title th:text="${title}" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <main>
+    <h1>Начальная страница</h1>
+    <p class="fs-5 col-md-8">Если хочешь увидеть все мои программы и их исходный код, то жми на кнопку снизу</p>
+
+    <div class="mb-5">
+      <a href="https://github.com/ksmosss" class="btn btn-primary btn-lg px-4">github</a>
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h2>Просто для примера</h2>
+        <p>Это я добавил как шаблон, здесь будет много всего интересного</p>
+        <ul class="icon-list ps-0">
+          <li class="d-flex align-items-start mb-1"><a href="https://t.me/ksmos_008" rel="noopener" target="_blank">Мой Telegram</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Ссылки</h2>
+        <ul class="icon-list ps-0">
+          <li class="d-flex align-items-start mb-1"><a href="https://t.me/ksmos_008">Telegram</a></li>
+          <li class="d-flex align-items-start mb-1"><a href="https://github.com/ksmosss">VK</a></li>
+          <li class="d-flex align-items-start mb-1"><a href="https://github.com/ksmosss">GitHub</a></li>
+          <li class="d-flex align-items-start mb-1"><a href="/docs/5.2/getting-started/vite/">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer th:insert="blocks/footer :: footer"></footer>
+</div>
+<script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
